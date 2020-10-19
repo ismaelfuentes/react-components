@@ -1,0 +1,25 @@
+.tabBar__container {
+  height: 35px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+
+  &.tabBar__container__secondary {
+    padding: 0px 10px;
+    
+    // TODO : Clean this shit and parametrize the tabs
+    &>*>*{
+      font-size: 15px;
+    }
+  }
+}
+
+.tabBar__scrollable {
+  display: flex;
+  flex-direction: row;
+  transition: transform 1s;
+  transition-timing-function: ease-out;
+  overflow: visible;
+}

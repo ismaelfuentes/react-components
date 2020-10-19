@@ -1,0 +1,95 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:react/recommended",
+    "react-app" // de no ponerla variables globales propias del navegador no las reconoce y las detecta como error. ejemplos como document, describe, window, etc 
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "react",
+    "react-hooks"
+  ],
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "camelcase": "off",
+    "@typescript-eslint/camelcase": [
+      "off"
+    ],
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/interface-name-prefix": 1,
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/no-namespace": 0,
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "if"
+      }
+    ],
+    "curly": 2,
+    "brace-style": 2,
+    "dot-location": [
+      "warn",
+      "property"
+    ],
+    "eqeqeq": [
+      "warn",
+      "allow-null"
+    ],
+    "indent": [
+      0,
+      "tab"
+    ],
+    "no-console": "off",
+    "no-tabs": 0,
+    "no-useless-catch": "off",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "react/display-name": 0,
+    "semi": [
+      2,
+      "never"
+    ],
+    "strict": [
+      "error",
+      "global"
+    ],
+    "prettier/prettier": 0,
+    "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+    "react-hooks/rules-of-hooks": "error" // Checks rules of Hooks
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

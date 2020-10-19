@@ -1,0 +1,64 @@
+@import '../styles/colors.scss';
+
+.react-icon {
+  cursor: pointer;
+
+  &.icon--disabled {
+    color: $cloudy !important;
+    fill: $cloudy !important;
+  }
+  
+  /* ** ** **
+  ** Colors **
+  ** ** ** */
+  &.icon-color_original {
+
+  }
+
+  &.icon-color_positive {
+    color: $normal_gray;
+    fill: $normal_gray;
+
+    &:hover {
+      color: $turquoise;
+      fill: $turquoise;
+    }
+  }
+
+  &.icon-color_negative {
+    color: $normal_gray;
+    fill: $normal_gray;
+
+    &:hover {
+      color: $critical_red;
+      fill:$critical_red;
+    }
+  }
+
+  &.icon-color_neutral {
+    color: $white;
+    fill: $white;
+
+    &:hover {
+      color: $turquoise;
+      fill: $turquoise;
+    }
+  }
+
+  &.icon-color_white {
+    color: $white;
+    fill: $white;
+  }
+
+  /* ** ** **
+  ** Sizes **
+  ** ** ** */
+  &.icon-size_medium {
+    transform: scale(1);
+  }
+
+  &.icon-size_small {
+    transform: scale(0.65);
+  }
+  
+}

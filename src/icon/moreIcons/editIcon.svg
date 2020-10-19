@@ -1,0 +1,13 @@
+<svg
+  width="15"
+  height="15"
+  viewBox="0 0 15 15"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>editor-pencil-pen-edit-write-glyph</title>
+  <path
+    d="M4.637 12.81l7.17-7.168L8.533 2.37l-7.17 7.168 3.274 3.274zm-.75.848l-3.875.604.602-3.876 3.272 3.272zM13.93 3.623c.45-.449-.02-.917-.02-.917L11.576.37s-.469-.469-.918-.02L9.313 1.694l3.273 3.274 1.344-1.345z"
+    fill="#FFF"
+    fill-rule="evenodd"
+  ></path>
+</svg>

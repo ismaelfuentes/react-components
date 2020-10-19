@@ -1,0 +1,16 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="8"
+  height="10"
+  viewBox="0 0 8 12"
+>
+  <text
+    fill="currentColor"
+    fill-rule="evenodd"
+    font-size="12"
+    font-weight="700"
+    transform="translate(-3 2)"
+  >
+    <tspan x="4" y="10">✓</tspan>
+  </text>
+</svg>

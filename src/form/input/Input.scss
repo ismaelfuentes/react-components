@@ -1,0 +1,129 @@
+$label_color: #637181;
+
+$input_border: rgba(204, 210, 217, 1);
+$input_placeholder: #758393b3;
+$input_color: #4a637c;
+
+$error: #e6312e;
+
+.react-input {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+
+  &.react-input--empty {
+    margin-bottom: 0px;
+  }
+
+  .react-input_label {
+    width: 100%;
+    height: 19px;
+    color: $label_color;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    margin-bottom: 5px;
+  }
+
+  .react-input_input {
+    width: 100%;
+    height: 45px;
+    padding: 15px 24px 15px 16px;
+    border: 1px solid $input_border;
+    border-radius: 2px;
+    transition: border-color 0.1s ease;
+    background-color: white;
+    box-sizing: border-box;
+
+    &[disabled] {
+      background-color: #e8e8e8;
+    }
+
+    &.react-input_input--isConfig {
+      margin-left: -15px;
+    }
+
+    &.react-input_select {
+      padding: 0px;
+      position: relative;
+
+      select {
+        padding: 0px 24px 0px 16px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: inherit;
+      }
+
+      &::after {
+        border-color: #00d1b2;
+      }
+
+      .react-input_select_cross {
+        position: absolute;
+        right: 2.5em;
+        top: calc(50% - 0.55em);
+        height: 1em;
+        line-height: 1em;
+        font-weight: bold;
+        color: #868686;
+        cursor: pointer;
+        background: white;
+        width: 15px;
+        text-align: center;
+      }
+    }
+  }
+
+  .react-input_checkbox {
+    width: 1.1em;
+    height: 1.1em;
+    margin-left: 0.3em;
+  }
+
+  .react-input_text {
+    font-size: 13px;
+    color: $input_color;
+    width: 100%;
+    overflow: hidden;
+
+    &::placeholder {
+      font-size: 13px;
+      color: $input_placeholder;
+    }
+  }
+
+  .react-input_error-text {
+    width: 100%;
+    height: 13px;
+    margin-top: 6px;
+    line-height: 13px;
+    font-size: 13px;
+    color: $error;
+  }
+
+  .react-input--transparent {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+
+    .react-input_select_cross {
+      right: 1em !important;
+    }
+
+    .react-input_text {
+      padding-right: 1em !important;
+    }
+  }
+
+  /* errors in the input */
+  &.react-input--error {
+    .react-input_label {
+      color: $error;
+    }
+
+    .react-input_input {
+      border-color: $error;
+    }
+  }
+}

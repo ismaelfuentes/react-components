@@ -1,0 +1,139 @@
+@import '../styles/colors.scss';
+
+.c-Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(42, 44, 56, 0.25);
+}
+
+
+
+.c-Modal a {
+  color: $mermaid;
+}
+
+.c-Modal__container {
+  background-color: #fff;
+  width: 700px;
+  padding: 35px 50px 50px 50px;
+  max-height: calc(100vh - 60px);
+  position: relative;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 0 14px 10px rgba(0, 0, 0, 0.05);
+  overflow: auto;
+}
+
+@media screen and (min-height: 910px) {
+  .c-Modal__container {
+    max-height: 850px !important;
+  }
+}
+
+.c-Modal__children {
+  color: GRAY;
+}
+
+.c-Modal__children input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.c-Modal__title {
+  font-size: 20px;
+  color: rgb(74, 99, 124);
+  font-weight: 600;
+  margin: 5px 0 25px 0;
+}
+
+.c-Modal__subtitle {
+  margin-top: 15px;
+
+  .c-Modal__subtitle__entity {
+    color: $mermaid
+  }
+}
+
+.c-Modal__subtitle,
+.c-Modal__additional-info {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: rgb(164, 175, 187);
+}
+
+.c-Modal__additional-info {
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.c-Modal__description {
+  font-size: 16px;
+  color: rgb(164, 175, 187);
+}
+
+.c-Modal .Field__button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c-Modal .Field__button--secondary {
+  margin-right: 20px;
+}
+
+.c-Modal--size-Big {
+  width: 1000px;
+}
+
+.c-Modal--size-Medium {
+  width: 700px;
+}
+
+.c-Modal--size-Small {
+  width: 500px;
+}
+
+.c-Modal--layout-dialog {
+  max-width: 550px;
+  text-align: center;
+}
+
+.c-Modal--layout-modal .c-Modal__buttons-container {
+  margin-top: 45px;
+
+  & > * {
+    float: right;
+    margin-left: 20px;
+  }
+}
+
+.c-Modal__spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.c-Modal__foter {
+  position: relative;
+  top: 30px;
+  margin-top: 20px;
+  line-height: 6px;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(16, 212, 171);
+}
+
+.confirm-edition-copy {
+  margin-bottom: 15px;
+}
