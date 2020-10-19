@@ -2,26 +2,6 @@
 
 > Generic and reusable react components
 
-## Update dependencies and link projects
-
-**_We highly recommend to remove node_module first of all._**
-
-#### If we update react versions, we need to link afterwards.
-
-1. Then, move to the example project and link the example project to these libraries
-   ```bash
-    yarn link react-component
-   ```
-   If we want to ensure that we are using the right linked package in the terminal , go to your root project that will consume the package and write:
-   ```bash
-   ls -l node_modules/ | egrep "^l"
-   ```
-   you should see something similar to:
-   ```
-   ❯ ls -l node_modules/ | egrep "^l"
-   lrwxr-xr-x   1 alexistroncoso  staff    55  8 Oct 13:12 react-components -> ../../../../../../.config/yarn/link/react-components
-   ```
-
 ## Install
 
 ```bash
@@ -68,3 +48,23 @@ In order to use the modal component, the index.html must have this specific div 
 ```html
 <div id="modal-root"></div>
 ```
+
+## Update dependencies and link projects
+
+**_We highly recommend to remove node_module first of all._**
+
+#### If we update react versions, we need to link afterwards.
+
+1. Then, move to the example project and link the example project to these libraries
+   ```bash
+    yarn link react-component
+   ```
+   If we want to ensure that we are using the right linked package in the terminal , go to your root project that will consume the package and write:
+   ```bash
+   ls -l node_modules/ | egrep "^l"
+   ```
+   you should see something similar to:
+   ```
+   ❯ ls -l node_modules/ | egrep "^l"
+   lrwxr-xr-x   1 ismael  staff    55  8 Oct 13:12 react-components -> ../../../../../../.config/yarn/link/react-components
+   ```
